@@ -17,12 +17,12 @@ h1{font-size:1.4rem}h2{font-size:1.05rem;margin-top:1.6rem}a{color:#e11d48}
 <p>Effective August 2026. App Store Review Guideline 5.1.1. The same terms appear in the RedMed app under Help → Privacy.</p>
 <h2>What we collect</h2>
 <p>RedMed does not collect your medical ID, location, Health data, Face ID biometrics, or usage analytics. There is no RedMed profile server and no account.</p>
-<p>You may type a medical ID on your iPhone. That stays in this phone’s Keychain. If you write an NFC band, a copy lives on that chip so a passerby tap can open the card. If you allow Location on the 911 tab, coordinates stay on screen for you to read to dispatch. Optional Apple Health import (when enabled) reads only birth date and blood type on this phone. Motion for the crash alarm is processed in RAM and not stored.</p>
-<p>If you email help.RedMed@gmail.com we see the address and message you send.</p>
+<p>You may type a medical ID on your iPhone. That stays in this phone’s Keychain (<code>WhenPasscodeSetThisDeviceOnly</code>, no biometry ACL — readable while the device is unlocked, excluded from iCloud and backups). Face ID gates Edit, Save, and Erase only — not reading the card, not 911, not Aid, not NFC write, not tapper. If you write an NFC band, a copy lives on that chip so a passerby tap can open the card. If you allow Location on the 911 tab, coordinates stay on screen for you to read to dispatch — they are not sent to 911 or to RedMed. Nearby hospitals asks Apple Maps on this phone for ER POIs; that search is Apple’s, not a RedMed upload. Optional Apple Health import (when enabled) reads only birth date and blood type on this phone. Motion for the crash alarm is processed in RAM and not stored.</p>
+<p>Consent (“Before you continue”) is first launch or a policy update, then Main — not after Face ID. If you email help.RedMed@gmail.com we see the address and message you send.</p>
 <h2>How we use it</h2>
 <p>On-device data is used only to show your ID, optionally write a band, show 911 coordinates, or sound a local alarm. We do not use data for advertising, tracking, or profiling.</p>
 <h2>Third parties</h2>
-<p>No ad networks, analytics SDKs, or data brokers. We do not sell personal information. Apple may process Face ID, Location, Health, or NFC on the device under Apple’s rules. Anyone who taps your band can read the card — that is the product, not a RedMed upload.</p>
+<p>No ad networks, analytics SDKs, or data brokers. We do not sell personal information. Apple may process Face ID, Location, Health, NFC, or a MapKit hospital search on the device under Apple’s rules. Anyone who taps your band can read the card — that is the product, not a RedMed upload.</p>
 <h2>Retention and deletion</h2>
 <p>We keep no profile. On the phone: Help → Erase all RedMed data (Face ID), or delete the app. On the band: overwrite or discard it. We cannot wipe a band remotely. Support email is kept only long enough to reply, then deleted.</p>
 <h2>Withdraw consent</h2>
